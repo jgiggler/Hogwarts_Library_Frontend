@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Library Members</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="books.html">Books</a>
+        <a href="authors.html">Authors</a>
+        <a href="members.html">Members</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <header>
+        <h1>Library Members</h1>
+    </header>
+<!--SHOW ALL-->
+<div id="browse" style="display: block">
+        <p><strong>Members</strong></p>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th><a href="#">New</a></th>
+            <th></th>
+            <th>Member ID</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Class Year</th>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td align="middle" >50</td>
+            <td align="right">nevillelong@hogwarts.edu</td>
+            <td align="right" >482-986-3846</td>
+            <td align="middle">Surrey, England</td>
+            <td align="right">3</td>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td align="middle" >51</td>
+            <td align="right">ronweasley@hogwarts.edu</td>
+            <td align="right" >765-987-1010</td>
+            <td align="middle">The Burrow, Devon, England</td>
+            <td align="right">5</td>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td align="middle" >52</td>
+            <td align="right">lunalove@hogwarts.edu</td>
+            <td align="right">654-852-2222</td>
+            <td align="middle">Lovegood Manor, Bath, England</td>
+            <td align="right">3</td>
+          </tr>
+        </table>
+        </div> 
+<!--ADD-->
+<div id="insert" style="display: block">
+    <form id="addMember">
+        <legend><strong>Add a Library Member</strong></legend>
+          <fieldset class="fields">
+            <label>Member ID</label> <input type="number" name="memberID">
+            <label>Email</label> <input type="text" name="email">
+            <label>Phone Number</label> <input type="number" name="phone">
+            <label>Address</label> <input type="text" name="address">
+            <label>Class Year</label><input type="number" name=year>
+          </fieldset>
+          <input class="btn" type="submit" id="addMember" value="Add Member">
+          <input class="btn" type="button" value="Cancel">
+	</form> 
+</div>
+<!--DELETE-->
+<div id="delete" style="display: block">
+    <form id="deleteMember">
+        <legend><strong>Delete a Library Member</strong></legend>
+            <fieldset class="fields">
+            <p>Are you sure you wish to delete this member?</p>
+            <p><label>Member ID: </label>50</p>
+            <p><label>Email: </label>nevillelong@hogwarts.edu</p>
+            <p><label>Phone Number: </label>482-986-3846</p>
+            <p><label>Address: </label>Surrey, England</p>
+            <p><label>Class Year: </label>3</p>
+      </fieldset>
+      <input class="btn" type="submit" id="deleteMember" value="Delete Member">
+            <input class="btn" type="button" value="Cancel" >
+    </form> 
+  </div>
+<!--UPDATE-->
+<div id="update" style="display: block">
+  <form id="updateMember">
+      <legend><strong>Update a Library Member</strong></legend>
+          <fieldset class="fields">
+          <p><label>Member ID:</label> 50</p>
+            <label>Email </label> <input type="text" value="nevillelong@hogwarts.edu" name="email">
+            <label>Phone Number </label><input type="number" value="4829863846" name="phone">
+            <label>Address </label><input type="text" value="Surrey, England" name="address">
+            <label>Class Year </label> <input type="number" value="3" name="year">
+    </fieldset>
+    <input class="btn" type="submit" id="updateMember" value="Update Member">
+          <input class="btn" type="button" value="Cancel" >
+  </form> 
+</div>
+</body>
+</html>

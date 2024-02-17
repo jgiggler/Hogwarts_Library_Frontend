@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Reservations</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="books.html">Books</a>
+        <a href="authors.html">Authors</a>
+        <a href="members.html">Members</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <header>
+        <h2>Reservations</h1>
+    </header>
+<!--SHOW ALL-->
+<div id="browse" style="display: block">
+        <p><strong>Reservation List</strong></p>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th><a href="#">New</a></th>
+            <th></th>
+            <th>Reservation ID</th>
+            <th>Member ID</th>
+            <th>Book ISBN</th>
+            <th>Status Code</th>
+            <th>Reserve Date</th>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td align="middle" >101</td>
+            <td align="middle">50</td>
+            <td align="right" >9781408855652</td>
+            <td align="middle">RES</td>
+            <td align="right">9-12-2023</td>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td align="middle" >102</td>
+            <td align="middle">51</td>
+            <td align="right" >439064872</td>
+            <td align="middle">RET</td>
+            <td align="right">9-12-2023</td>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td align="middle" >103</td>
+            <td align="middle">52</td>
+            <td align="right" >9780333791035</td>
+            <td align="middle">RES</td>
+            <td align="right">12-12-2023</td>
+          </tr>
+        </table>
+        </div> 
+<!--ADD-->
+<div id="insert" style="display: block">
+    <form id="addReservation">
+        <legend><strong>Add a Reservation</strong></legend>
+          <fieldset class="fields">
+            <label>Reservation ID</label> <input type="number" name="memberID">
+            <label>Member ID</label> <input type="number" name="memberID">
+            <label>Book ISBN</label> <input type="number" name="bookISBN">
+            <label>Status Code</label> 
+                <select name="code" id="code">
+                    <option value="RES">RES</option>
+                    <option value="RET">RET</option>
+                    <option value="WAIT">WAIT</option>
+                </select>
+            <label>Reserve Date</label> <input type="date" name="date">
+          </fieldset>
+          <input class="btn" type="submit" id="addReservation" value="Add Reservation">
+          <input class="btn" type="button" value="Cancel">
+	</form> 
+</div>
+<!--DELETE-->
+<div id="delete" style="display: block">
+    <form id="deleteReservation">
+        <legend><strong>Delete a Reservation</strong></legend>
+            <fieldset class="fields">
+            <p>Are you sure you wish to delete the reservation?</p>
+            <p><label>Reservation ID:</label> 101</p>
+            <p><label>Member ID: </label>50</p>
+            <p><label>Book ISBN: </label>9781408855652</p>
+            <p><label>Status Code: </label>RES</p>
+            <p><label>Reserve Date: </label>9-12-2023</p>
+      </fieldset>
+      <input class="btn" type="submit" id="deleteReservation" value="Delete Reservation">
+            <input class="btn" type="button" value="Cancel" >
+    </form> 
+  </div>
+<!--UPDATE-->
+<div id="update" style="display: block">
+  <form id="updateReservation">
+      <legend><strong>Update a Reservation</strong></legend>
+          <fieldset class="fields">
+          <p><label>Reservation ID:</label> 101</p>
+          <p><label>Member ID:</label> 50</p>
+            <label>Book ISBN </label> <input type="number" value="9781408855652" name="bookISBN">
+            <label> Status Code </label>
+                <select name="code" id="code">
+                    <option value="RES">RES</option>
+                    <option value="RET">RET</option>
+                    <option value="WAIT">WAIT</option>
+                </select>
+            <label> Reserve Date </label> <input type="date" value="9-12-2023" name="date">
+    </fieldset>
+    <input class="btn" type="submit" id="updateReservation" value="Update Planet">
+          <input class="btn" type="button" value="Cancel" >
+  </form> 
+</div>
+</body>
+</html>

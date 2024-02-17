@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Authors</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="books.html">Books</a>
+        <a href="authors.html">Authors</a>
+        <a href="members.html">Members</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Authors</h2>
+        <!--Browse Authors-->
+        <div id="browse">Browse Authors
+            <table border="1" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <th><a href="#">New</a></th>
+                        <th></th>
+                        <th>Author ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>       
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>51</td>
+                        <td>J.K.</td>
+                        <td>Rowling</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>52</td>
+                        <td>F. Scott</td>
+                        <td>Fitzgerald</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>53</td>
+                        <td>Orson Scott</td>
+                        <td>Card</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>54</td>
+                        <td>Albus</td>
+                        <td>Dumbledore</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <!--Insert-->
+        <div id="insert">
+            <form id="addAuthor">
+                <legend>Add Author</legend>
+                <fieldset>
+                    <label>First Name:</label>
+                    <input type="text" name="first">
+                    <label>Last Name:</label>
+                    <input type="text" name="last">
+                </fieldset>
+                <input class="btn" type="submit" id="addAuthor" value="Add Author">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Update-->
+        <div id="update">
+            <form id="updateAuthor">
+                <legend>Update Author</legend>
+                <fieldset>
+                    <label>Author ID: </label> "51"
+                    <label>First Name:</label>
+                    <input type="text" name="first" value="J.K.">
+                    <label>Last Name:</label>
+                    <input type="text" name="last" value="Rowling Jr.">
+                </fieldset>
+                <input class="btn" type="submit" id="updateAuthor" value="Update Author">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div> 
+        <!--Delete-->   
+        <div id="delete">
+            <form id="deleteBook">
+                <legend>Delete Book</legend>
+                <fieldset>
+                    <p>Are you sure you wish to delete the following Author?</p>
+                    <label>First Name:</label> " Albus "
+                    <label>Last Name:</label> " Dumbledore "
+                </fieldset>
+                <input class="btn" type="submit" id="deleteAuthor" value="Delete Author">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

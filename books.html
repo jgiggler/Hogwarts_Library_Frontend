@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Books</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="books.html">Books</a>
+        <a href="authors.html">Authors</a>
+        <a href="members.html">Members</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Books</h2>
+        <!--Browse Books-->
+        <div id="browse">Browse Books
+            <table border="1" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <th><a href="#">New</a></th>
+                        <th></th>
+                        <th>Book ISBN</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Number of Copies</th>
+                        <th>Copies Available</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>9781408855652</td>
+                        <td>Harry Potter: Philosopher's Stone</td>
+                        <td>Fantasy</td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>$24.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>9780333791035</td>
+                        <td>The Great Gatsby</td>
+                        <td>Historical Fiction</td>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>$12.00</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                        <td>439064872</td>
+                        <td>Harry Potter: Chamber of Secrets</td>
+                        <td>Fantasy</td>
+                        <td>28</td>
+                        <td>25</td>
+                        <td>$25.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Insert-->
+        <div id="insert">
+            <form id="addBook">
+                <legend>Add Book</legend>
+                <fieldset>
+                    <label>ISBN:</label>
+                    <input type="text" name="isbn">
+                    <label>Title:</label>
+                    <input type="text" name="title">
+                    <label>Genre:</label>
+                    <input type="text" name="genre">
+                    <label>Total Copies:</label>
+                    <input type="text" name="copies">
+                    <label>Copies Available:</label>
+                    <input type="text" name="available">
+                    <label>Price:</label>
+                    <input type="text" name="price">
+                </fieldset>
+                <input class="btn" type="submit" id="addBook" value="Add Book">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Update-->
+        <div id="update">
+            <form id="updateBook">
+                <legend>Update Book</legend>
+                <fieldset>
+                    <label>ISBN:</label>
+                    <input type="text" name="isbn" value="439064872">
+                    <label>Title:</label>
+                    <input type="text" name="title" value="Harry Potter: Chamber of Secrets">
+                    <label>Genre:</label>
+                    <input type="text" name="genre" value="Fantasy">
+                    <label>Total Copies:</label>
+                    <input type="text" name="copies" value="30">
+                    <label>Copies Available:</label>
+                    <input type="text" name="available" value="27">
+                    <label>Price:</label>
+                    <input type="text" name="price" value="$25.00">
+                </fieldset>
+                <input class="btn" type="submit" id="updateBook" value="Update Book">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Delete-->     
+        <div id="delete">
+            <form id="deleteBook">
+                <legend>Delete Book</legend>
+                <fieldset>
+                    <p>Are you sure you wish to delete the following Book?</p>
+                    <label>Title:</label> " The Great Gatsby "
+                    <label>ISBN:</label>" 9780333791035 "
+                </fieldset>
+                <input class="btn" type="submit" id="deleteBook" value="Delete Book">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
